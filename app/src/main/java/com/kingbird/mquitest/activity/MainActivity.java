@@ -1,24 +1,25 @@
-package com.kingbird.mquitest;
+package com.kingbird.mquitest.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.view.WindowManager;
-import android.webkit.DownloadListener;
 
+import com.kingbird.mquitest.R;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
 import com.qmuiteam.qmui.widget.QMUITopBar;
 import com.qmuiteam.qmui.widget.QMUITopBarLayout;
-import com.qmuiteam.qmui.widget.webview.QMUIWebView;
-import com.qmuiteam.qmui.widget.webview.QMUIWebViewContainer;
 import com.socks.library.KLog;
+
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
+import static com.kingbird.mquitest.MyApplication.getContext;
 
 /**
  * @ClassName: MainActivity
@@ -34,14 +35,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //去除标题栏
+//        Objects.requireNonNull(getSupportActionBar()).hide();
+//        setContentView(R.layout.activity_main);
 
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 //            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 //            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 //        }
         KLog.e("我是：" + this);
-        ButterKnife.bind(this);
+        // 沉浸式状态栏
+//        QMUIStatusBarHelper.translucent(this);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.activity_main, null);
+        ButterKnife.bind(this, view);
+//        ButterKnife.bind(this);
 
 //        Intent intent = new Intent(this, GridLayoutActivity.class);
 //        startActivity(intent);

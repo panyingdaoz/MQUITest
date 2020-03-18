@@ -1,17 +1,14 @@
-package com.kingbird.mquitest;
+package com.kingbird.mquitest.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.kingbird.mquitest.R;
 import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
 import com.qmuiteam.qmui.widget.QMUITopBar;
 import com.socks.library.KLog;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**

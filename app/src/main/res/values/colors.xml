@@ -3,4 +3,20 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="app_color_blue">#00A8E1</color>
+    <color name="app_color_blue_pressed">#c000A8E1</color>
+    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+<!--    <color name="qmui_config_color_background">#F4F5F7</color>-->
+    <color name="qmui_config_color_background">#9FD661</color>
+    <color name="app_color_blue_disabled">#8000A8E1</color>
+    <color name="app_color_description">@color/qmui_config_color_gray_5</color>
+
+    <color name="app_color_blue_3">#EBF9FF</color>
+    <color name="app_color_blue_3_disabled">#7FEBF9FF</color>
+    <color name="app_color_blue_3_pressed">#7FEBF9FF</color>
+
+    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
+    <color name="app_color_blue_2">#31BDF3</color>
 </resources>

@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/qmui_config_color_background">
+    android:background="@color/qmui_config_color_background">
 
     <com.qmuiteam.qmui.widget.QMUITopBarLayout
-        android:id="@+id/topbar"
+        android:id="@+id/webTopbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"/>
@@ -15,7 +15,7 @@
         android:id="@+id/webview_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:layout_marginTop="40dp"
         android:fitsSystemWindows="true">
 
     </com.qmuiteam.qmui.widget.webview.QMUIWebViewContainer>
